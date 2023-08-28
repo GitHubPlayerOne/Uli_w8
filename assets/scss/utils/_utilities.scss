@@ -1,0 +1,46 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: pointer grab,
+    ),
+    "font-size": (
+      rfs: true,
+      responsive: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+    ),
+    "background-image": (
+      rfs: true,
+      property: background-image,
+      class: bg,
+      values: $bg-gradient,
+    ),
+    "font-weight":
+      map-merge(
+        map-get($utilities, "font-weight"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "font-weight"), "values"),
+              (
+                medium: $font-weight-medium,
+              )
+            ),
+        )
+      ),
+    "border-top": (
+      property: border-top,
+      responsive: true,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+          var(--#{$prefix}border-color),
+        0: 0,
+      ),
+    ),
+  )
+);

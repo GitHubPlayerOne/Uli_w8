@@ -1,11 +1,42 @@
+@import "./utils/variables";
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import "../../node_modules/bootstrap/scss/variables";
 
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "../node_modules/bootstrap/scss/utilities";
+@import "./utils/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
 
+// bootstrap components
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/transitions";
 
-@import './pages/index.scss';
+// bootstrap api
+@import "../node_modules/bootstrap/scss/utilities/api";
 
-@import "../../node_modules/bootstrap";
+// base
+@import "./base/fontStyle";
+@import "./base/base";
+
+// utilities
+@import "./utils/sizing";
+@import "./utils/background";
+@import "./utils/container";
+
+// component
+@import "./component/navber";
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+@import "./pages/index.scss";
