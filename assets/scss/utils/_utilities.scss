@@ -39,11 +39,25 @@ $utilities: map-merge(
             ),
         )
       ),
-    "letter-spacing": (
-      property: letter-spacing,
-      responsive: true,
-      class: ls,
-      values: $letter-spacing,
-    )
+    // 自訂
+    "letter-spacing":
+      (
+        property: letter-spacing,
+        responsive: true,
+        class: ls,
+        values: $letter-spacing,
+      ),
+    // 增加響應式
+    "border-end":
+      (
+        property: border-right,
+        responsive: true,
+        class: border-end,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+            var(--#{$prefix}border-color),
+          0: 0,
+        ),
+      )
   )
 );
