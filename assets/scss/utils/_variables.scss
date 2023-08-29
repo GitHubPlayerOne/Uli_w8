@@ -1,5 +1,4 @@
 // Color system 6
-// scss-docs-start theme-color-variables
 $primary-100: #7000ff;
 $primary-200: #11002d;
 $primary-300: #6e01f8;
@@ -15,6 +14,7 @@ $white: #ffffff;
 
 $theme-colors: (
   "white": $white,
+  "dark": $dark,
   "primary-100": #7000ff,
   "primary-300": #6e01f8,
 );
@@ -25,13 +25,13 @@ $primary-linear-200: linear-gradient(to right, $primary-100, $primary-200);
 $primary-radial-100: radial-gradient(#28085c, $dark);
 $primary-radial-200: radial-gradient($dark, #28085c);
 
+// custom map
 $bg-gradient: (
   primary-linear-100: $primary-linear-100,
   primary-linear-200: $primary-linear-200,
   primary-radial-100: $primary-radial-100,
   primary-radial-200: $primary-radial-200,
 );
-// scss-docs-end theme-color-variables
 
 // Options 333
 $enable-rfs: false;
@@ -78,6 +78,7 @@ $font-sizes: (
   11: $font-size-base * 2.75,
   12: $font-size-base * 3,
   16: $font-size-base * 4,
+  20: $font-size-base * 5,
   24: $font-size-base * 6,
 );
 
@@ -87,7 +88,12 @@ $headings-line-height: 1.5;
 
 $font-weight-medium: 500;
 
-// Buttons + Forms
+// custom map
+$letter-spacing: (
+  sm: 1.6px,
+);
+
+// Buttons + Forms 713
 $input-btn-focus-width: 0;
 
 // Buttons 742

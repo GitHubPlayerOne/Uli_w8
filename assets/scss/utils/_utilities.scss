@@ -1,25 +1,31 @@
 $utilities: map-merge(
   $utilities,
   (
-    "cursor": (
-      property: cursor,
-      class: cursor,
-      responsive: true,
-      values: pointer grab,
-    ),
-    "font-size": (
-      rfs: true,
-      responsive: true,
-      property: font-size,
-      class: fs,
-      values: $font-sizes,
-    ),
-    "background-image": (
-      rfs: true,
-      property: background-image,
-      class: bg,
-      values: $bg-gradient,
-    ),
+    // 自訂
+    "cursor":
+      (
+        property: cursor,
+        class: cursor,
+        responsive: true,
+        values: pointer grab,
+      ),
+    // 新增響應式
+    "font-size":
+      (
+        rfs: true,
+        responsive: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes,
+      ),
+    // 自訂
+    "background-image":
+      (
+        property: background-image,
+        class: bg,
+        values: $bg-gradient,
+      ),
+    // 增加 500 字重
     "font-weight":
       map-merge(
         map-get($utilities, "font-weight"),
@@ -33,14 +39,10 @@ $utilities: map-merge(
             ),
         )
       ),
-    "border-top": (
-      property: border-top,
-      responsive: true,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
-          var(--#{$prefix}border-color),
-        0: 0,
-      ),
-    ),
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: $letter-spacing,
+    )
   )
 );
