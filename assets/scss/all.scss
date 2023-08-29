@@ -20,6 +20,7 @@
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/modal";
 @import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/forms";
 
 // bootstrap api
 @import "../node_modules/bootstrap/scss/utilities/api";
@@ -35,6 +36,7 @@
 
 // component
 @import "./component/navber";
+@import "./component/forms";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";

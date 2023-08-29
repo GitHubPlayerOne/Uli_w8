@@ -41,6 +41,7 @@ $utilities: map-merge(
       ),
     "letter-spacing": (
       property: letter-spacing,
+      responsive: true,
       class: ls,
       values: $letter-spacing,
     )
