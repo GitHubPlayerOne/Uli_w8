@@ -1,0 +1,32 @@
+.card-group {
+  .card:nth-child(even) {
+    background: $white;
+    color: $dark;
+  }
+}
+.card {
+  background: $primary-400;
+  color: $white;
+  padding: 24px;
+  height: 351px;
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    padding: 40px;
+    height: 416px;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  &-body {
+    flex-grow: 1;
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

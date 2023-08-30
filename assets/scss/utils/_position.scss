@@ -1,0 +1,6 @@
+.ps-brand {
+  bottom: -68px;
+  @include media-breakpoint-up(md) {
+    bottom: -233px;
+  }
+}

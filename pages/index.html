@@ -91,6 +91,124 @@
         </p>
       </div>
     </div>
+    <!-- comments -->
+    <div
+      class="bg-primary-radial-200 pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden position-relative"
+    >
+      <div class="container-xxl fw-bold">
+        <div class="row align-items-center mb-4 mb-lg-6">
+          <div class="col-lg-5">
+            <h2 class="fs-10 fs-md-12 ls-10 ls-md-12 mb-4">使用分享</h2>
+          </div>
+          <div class="col-12 mb-6 mb-lg-10 order-lg-1">
+            <div class="d-flex gap-4">
+              <p>01</p>
+              <img src="/assets/images/icon/horizontal_rule.png" alt="-" />
+              <p>04</p>
+            </div>
+          </div>
+          <div class="col-lg-7 mb-6 mb-lg-0 order-lg-0">
+            <p>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+          </div>
+          <div class="col-12 order-lg-2">
+            <span class="material-icons fs-20"> emergency </span>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-hidden">
+        <div class="container-xxl fw-bold">
+          <!-- Swiper -->
+          <div
+            class="swiper comment-swiper text-dark overflow-visible mb-0 mb-md-9 cursor-grab"
+          >
+            <div
+              class="swiper-wrapper card-group flex-wrap flex-md-nowrap gap-6 gap-md-0"
+            >
+              <div class="swiper-slide card">
+                <div class="card-header">
+                  <p>Zona</p>
+                  <span class="material-icons fs-2"> fiber_manual_record </span>
+                  <p>Taipei</p>
+                </div>
+                <p class="card-body">
+                  ALPHABOX+
+                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+                <div class="card-footer">
+                  <span class="material-icons fs-4"> circle</span>
+                  <span class="material-icons fs-4"> circle</span>
+                  <p>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-header">
+                  <p>Lin</p>
+                  <span class="material-icons fs-2"> fiber_manual_record </span>
+                  <p>Chiayi</p>
+                </div>
+                <p class="card-body">
+                  非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                </p>
+                <div class="card-footer">
+                  <span class="material-icons fs-4"> circle </span>
+                  <span class="material-icons fs-4"> circle</span>
+                  <p>ALPHABOX+ Felix</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-header">
+                  <p>云</p>
+                  <span class="material-icons fs-2"> fiber_manual_record </span>
+                  <p>Taipei</p>
+                </div>
+                <p class="card-body">
+                  我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見
+                  ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                </p>
+                <div class="card-footer">
+                  <span class="material-icons fs-4"> circle </span>
+                  <span class="material-icons fs-4"> circle</span>
+                  <p>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-header">
+                  <p>Zichi</p>
+                  <span class="material-icons fs-2"> fiber_manual_record </span>
+                  <p>Kaohsiung</p>
+                </div>
+                <p class="card-body">
+                  讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                </p>
+                <div class="card-footer">
+                  <span class="material-icons fs-4"> circle </span>
+                  <span class="material-icons fs-4"> circle</span>
+                  <p>ALPHABOX+ Vito</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper scroll-bar -->
+          <div class="row align-items-center mb-0 mb-md-31 d-none d-md-flex">
+            <div class="col-8">
+              <div class="swiper-scrollbar position-static"></div>
+            </div>
+            <div class="col-4">
+              <p>SCROLL</p>
+            </div>
+          </div>
+          <p class="d-none d-md-block">
+            若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
+          </p>
+        </div>
+      </div>
+      <p
+        class="ps-brand en-font fs-32 fs-md-100 position-absolute start-50 translate-middle-x"
+        style="color: #ffffff0a"
+      >
+        ALPHABOX+
+      </p>
+    </div>
     <!-- contact -->
     <div class="bg-primary-500">
       <div class="container-xxl py-15 py-lg-36">
@@ -252,8 +370,33 @@
         </div>
       </li>
     </ol>
-    <%- include('./layout/footer'); -%>
 
+    <%- include('./layout/footer'); -%>
+    <script type="module">
+      import Swiper from "swiper/bundle";
+      import "swiper/css";
+      const swiper = new Swiper(".comment-swiper", {
+        spaceBetween: 24,
+        slidesPerView: 1,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true,
+        },
+        allowTouchMove: false,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            allowTouchMove: true,
+            mousewheel: true,
+          },
+          992: {
+            slidesPerView: 3,
+            allowTouchMove: true,
+            mousewheel: true,
+          },
+        },
+      });
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -35,10 +35,13 @@
 @import "./utils/container";
 @import "./utils/hover";
 @import "./utils/transition";
+@import "./utils/position";
 
 // component
 @import "./component/navber";
 @import "./component/forms";
+@import "./component/card";
+@import "./component/swiper";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";

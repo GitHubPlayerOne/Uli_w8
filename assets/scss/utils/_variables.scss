@@ -17,6 +17,7 @@ $theme-colors: (
   "dark": $dark,
   "primary-100": #7000ff,
   "primary-300": #6e01f8,
+  "primary-400": #380c7e,
   "primary-500": #1f0f39,
 );
 
@@ -58,6 +59,7 @@ $spacers: (
   19: $spacer * 4.75,
   20: $spacer * 5,
   24: $spacer * 6,
+  31: $spacer * 7.75,
   36: $spacer * 9,
   40: $spacer * 10,
   d-9: $spacer * 1.125,
@@ -82,6 +84,7 @@ $font-family-sans-serif: "Noto Sans TC", system-ui, -apple-system, "Segoe UI",
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-sizes: (
+  2: $font-size-base * 0.5,
   4: $font-size-base,
   5: $font-size-base * 1.25,
   6: $font-size-base * 1.5,
