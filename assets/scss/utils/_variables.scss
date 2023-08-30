@@ -23,8 +23,8 @@ $theme-colors: (
 $primary-linear-100: linear-gradient(to bottom, $primary-100, $primary-200);
 $primary-linear-200: linear-gradient(to right, $primary-100, $primary-200);
 
-$primary-radial-100: radial-gradient(#28085c, $dark);
-$primary-radial-200: radial-gradient($dark, #28085c);
+$primary-radial-100: radial-gradient(50% 50% at center, #28085c, $dark);
+$primary-radial-200: radial-gradient(50% 50% at center, $dark, #28085c);
 
 // custom map
 $bg-gradient: (
@@ -53,12 +53,14 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
+  14: $spacer * 3.5,
   15: $spacer * 3.75,
   19: $spacer * 4.75,
   20: $spacer * 5,
   24: $spacer * 6,
   36: $spacer * 9,
   40: $spacer * 10,
+  d-9: $spacer * 1.125,
   d-27: $spacer * 3.375,
   neg-10: $spacer * -2.5,
 );
@@ -90,6 +92,8 @@ $font-sizes: (
   16: $font-size-base * 4,
   20: $font-size-base * 5,
   24: $font-size-base * 6,
+  32: $font-size-base * 8,
+  100: $font-size-base * 25,
 );
 
 $headings-margin-bottom: 0;

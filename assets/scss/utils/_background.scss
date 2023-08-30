@@ -1,3 +1,26 @@
-.banner-img {
+.bg-banner {
   background: no-repeat center/cover url("/assets/images/home_background.png");
+}
+.bg-diane {
+  background: no-repeat 50% 0% / cover url("/assets/images/diane_vertical.png");
+}
+.bg-felix {
+  background: no-repeat 50% 0% / cover url("/assets/images/felix_vertical.png");
+}
+.bg-karina {
+  background: no-repeat 50% 0% / cover url("/assets/images/karina_vertical.png");
+}
+.bg-vito {
+  background: no-repeat 50% 0% / cover url("/assets/images/vito_vertical.png");
+}
+.bg-blend-darken {
+  background-blend-mode: darken;
+}
+.bg-dark-70 {
+  background-color: rgba($dark, 0.7) !important;
+}
+@include media-breakpoint-up(md) {
+  .bg-dark-md {
+    background-color: $dark !important;
+  }
 }
