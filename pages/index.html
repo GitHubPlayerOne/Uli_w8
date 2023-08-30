@@ -122,7 +122,7 @@
             class="swiper comment-swiper text-dark overflow-visible mb-0 mb-md-9 cursor-grab"
           >
             <div
-              class="swiper-wrapper card-group flex-wrap flex-md-nowrap gap-6 gap-md-0"
+              class="swiper-wrapper card-group flex-column flex-md-row gap-6 gap-md-0"
             >
               <div class="swiper-slide card">
                 <div class="card-header">
@@ -372,6 +372,8 @@
     </ol>
 
     <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
     <script type="module">
       import Swiper from "swiper/bundle";
       import "swiper/css";
@@ -397,6 +399,5 @@
         },
       });
     </script>
-    <script type="module" src="../main.js"></script>
   </body>
 </html>
