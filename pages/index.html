@@ -14,6 +14,28 @@
     <%- include('./layout/header',{borderBottom:"border-bottom",
     navbarPosition:"navbar-mobile-index"}); -%>
     <div class="h-banner bg-banner"></div>
+    <!-- intro -->
+    <div
+      class="bg-primary-radial-100 position-relative overflow-hidden pt-34 pt-md-36 pb-15 pb-md-13"
+      style="height: 1080px"
+    >
+      <img
+        src="../assets/images/carousel_mobile.png"
+        alt="立體投影技術"
+        class="position-absolute top-0 w-50 h-100 of-cover filter-blur-brightness"
+      />
+      <div class="position-relative zindex-1">
+        <div class="container-xxxl">
+          <div class="bg-primary-linear-200 w-100 h-40 mb-4 mb-md-2"></div>
+          <h2 class="fs-6 fs-md-12 ls-6 ls-md-12 mb-2 mb-md-3">什麼是</h2>
+          <h2 class="fs-6 fs-md-12 ls-6 ls-md-12">ALPHABOX+</h2>
+        </div>
+        <div class="border-top"></div>
+        <div class="container-xxxl">
+          <div class="bg-primary-linear-200 w-100 h-40 scale-neg-1"></div>
+        </div>
+      </div>
+    </div>
     <!-- news -->
     <div class="bg-primary-radial-100">
       <div class="container-xxl pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden">
@@ -121,9 +143,7 @@
           <div
             class="swiper comment-swiper text-dark overflow-visible mb-0 mb-md-9 cursor-grab"
           >
-            <div
-              class="swiper-wrapper card-group flex-column flex-md-row gap-6 gap-md-0"
-            >
+            <div class="swiper-wrapper card-group">
               <div class="swiper-slide card">
                 <div class="card-header">
                   <p>Zona</p>
@@ -379,22 +399,22 @@
       import "swiper/css";
       const swiper = new Swiper(".comment-swiper", {
         spaceBetween: 24,
-        slidesPerView: 1,
+        slidesPerView: "auto",
+        direction: "vertical",
+        mousewheel: true,
+        allowTouchMove: true,
         scrollbar: {
           el: ".swiper-scrollbar",
           draggable: true,
         },
-        allowTouchMove: false,
         breakpoints: {
           768: {
-            slidesPerView: 2,
-            allowTouchMove: true,
-            mousewheel: true,
+            slidesPerView: "2",
+            direction: "horizontal",
           },
           992: {
-            slidesPerView: 3,
-            allowTouchMove: true,
-            mousewheel: true,
+            slidesPerView: "3",
+            direction: "horizontal",
           },
         },
       });

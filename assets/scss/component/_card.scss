@@ -5,11 +5,14 @@
   }
 }
 .card {
+  height: 351px;
   background: $primary-400;
   color: $white;
   padding: 24px;
+  display: flex;
   flex-direction: column;
   @include media-breakpoint-up(md) {
+    height: 416px;
     padding: 40px;
   }
   &-header {
@@ -25,12 +28,5 @@
     display: flex;
     align-items: center;
     gap: 16px;
-  }
-}
-.swiper-slide.card {
-  height: 351px;
-  display: flex;
-  @include media-breakpoint-up(md) {
-    height: 416px;
   }
 }

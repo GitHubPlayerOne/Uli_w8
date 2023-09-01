@@ -54,12 +54,14 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
+  13: $spacer * 3.25,
   14: $spacer * 3.5,
   15: $spacer * 3.75,
   19: $spacer * 4.75,
   20: $spacer * 5,
   24: $spacer * 6,
   31: $spacer * 7.75,
+  34: $spacer * 8.5,
   36: $spacer * 9,
   40: $spacer * 10,
   d-9: $spacer * 1.125,
@@ -67,7 +69,7 @@ $spacers: (
   neg-10: $spacer * -2.5,
 );
 
-// Body
+// Body 397
 $body-color: $white;
 
 // Links 405
@@ -111,8 +113,14 @@ $letter-spacing: (
   sm: 1.6px,
   4: $letter-spacing-base,
   5: $letter-spacing-base * 1.25,
+  6: $letter-spacing-base * 1.5,
   10: $letter-spacing-base * 2.5,
   12: $letter-spacing-base * 3,
+);
+
+// custom map
+$filter: (
+  blur-brightness: blur(8px) brightness(0.7),
 );
 
 // Buttons + Forms 713

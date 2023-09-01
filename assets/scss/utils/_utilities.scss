@@ -58,6 +58,30 @@ $utilities: map-merge(
             var(--#{$prefix}border-color),
           0: 0,
         ),
-      )
+      ),
+    // 自訂
+    "object-fit":
+      (
+        property: object-fit,
+        class: of,
+        values: cover contain,
+      ),
+    // 自訂
+    "filter":
+      (
+        property: filter,
+        class: filter,
+        values: $filter,
+      ),
+    "z-index": (
+      property: z-index,
+      class: zindex,
+      values: (
+        -1: -1,
+        0: 0,
+        1: 1,
+        2: 2,
+      ),
+    )
   )
 );

@@ -1,3 +1,6 @@
-// .container-fluid {
-//   max-width: 1320px;
-// }
+.container-xxxl {
+  max-width: 1744px;
+  margin: 0 auto;
+  padding-left: calc($grid-gutter-width / 2);
+  padding-right: calc($grid-gutter-width / 2);
+}

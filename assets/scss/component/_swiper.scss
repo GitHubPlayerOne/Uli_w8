@@ -8,3 +8,14 @@
   border-radius: 50rem;
   background-color: rgba($white, 0.2);
 }
+.swiper-slide.card {
+  height: 351px;
+  display: flex;
+  @include media-breakpoint-up(md) {
+    height: 416px;
+  }
+}
+.swiper-wrapper .swiper-slide {
+  overflow: "auto";
+  -webkit-overflow-scrolling: touch;
+}
