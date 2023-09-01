@@ -64,8 +64,10 @@ $spacers: (
   34: $spacer * 8.5,
   36: $spacer * 9,
   40: $spacer * 10,
+  42: $spacer * 10.5,
   d-9: $spacer * 1.125,
   d-27: $spacer * 3.375,
+  neg-8: $spacer * -2,
   neg-10: $spacer * -2.5,
 );
 
@@ -114,6 +116,7 @@ $letter-spacing: (
   4: $letter-spacing-base,
   5: $letter-spacing-base * 1.25,
   6: $letter-spacing-base * 1.5,
+  8: $letter-spacing-base * 2,
   10: $letter-spacing-base * 2.5,
   12: $letter-spacing-base * 3,
 );

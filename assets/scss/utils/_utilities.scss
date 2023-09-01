@@ -73,15 +73,17 @@ $utilities: map-merge(
         class: filter,
         values: $filter,
       ),
-    "z-index": (
-      property: z-index,
-      class: zindex,
-      values: (
-        -1: -1,
-        0: 0,
-        1: 1,
-        2: 2,
-      ),
-    )
+    // 自訂
+    "z-index":
+      (
+        property: z-index,
+        class: zindex,
+        values: (
+          -1: -1,
+          0: 0,
+          1: 1,
+          2: 2,
+        ),
+      )
   )
 );

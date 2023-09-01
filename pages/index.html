@@ -13,16 +13,29 @@
   <body>
     <%- include('./layout/header',{borderBottom:"border-bottom",
     navbarPosition:"navbar-mobile-index"}); -%>
-    <div class="h-banner bg-banner"></div>
+    <div class="h-banner bg-banner">
+      <div class="container-xxxl">
+        <div class="row gx-8">
+          <div class="col-3">
+            <div class="border-bottom">
+              <a href="##" class="pb-2 fw-bold"
+                >最新消息！新版本 v15.4 釋出，搶先體驗！</a
+              >
+            </div>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </div>
     <!-- intro -->
     <div
       class="bg-primary-radial-100 position-relative overflow-hidden pt-34 pt-md-36 pb-15 pb-md-13"
-      style="height: 1080px"
     >
       <img
         src="../assets/images/carousel_mobile.png"
         alt="立體投影技術"
-        class="position-absolute top-0 w-50 h-100 of-cover filter-blur-brightness"
+        class="position-absolute top-0 col-md-10 col-lg-6 h-100 of-cover filter-blur-brightness"
       />
       <div class="position-relative zindex-1">
         <div class="container-xxxl">
@@ -30,8 +43,120 @@
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12 mb-2 mb-md-3">什麼是</h2>
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12">ALPHABOX+</h2>
         </div>
-        <div class="border-top"></div>
+        <div class="border-top mb-4 mb-md-8"></div>
         <div class="container-xxxl">
+          <div class="row justify-content-between align-items-center mb-8">
+            <div class="swiper-arrow col-1 d-none d-md-block">
+              <div class="swiper-button-prev">
+                <img
+                  src="../assets/images/icon/intro-arrow.png"
+                  alt="prev"
+                  class="scale-neg-1"
+                />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="swiper intro-swiper h-intro">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="../assets/images/carousel.png"
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="../assets/images/carousel_mobile.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">01</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="../assets/images/about_us.png"
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="../assets/images/about_us.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">02</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="../assets/images/screen.png"
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="../assets/images/screen.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">03</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-arrow col-1 d-none d-md-block">
+              <div class="swiper-button-next">
+                <img src="../assets/images/icon/intro-arrow.png" alt="prev" />
+              </div>
+            </div>
+          </div>
           <div class="bg-primary-linear-200 w-100 h-40 scale-neg-1"></div>
         </div>
       </div>
@@ -137,11 +262,11 @@
           </div>
         </div>
       </div>
-      <div class="overflow-hidden">
-        <div class="container-xxl fw-bold">
+      <div class="overflow-hidden position-relative">
+        <div class="container-xxl fw-bold swiper-disable">
           <!-- Swiper -->
           <div
-            class="swiper comment-swiper text-dark overflow-visible mb-0 mb-md-9 cursor-grab"
+            class="swiper comment-swiper overflow-visible mb-0 mb-md-9 cursor-grab"
           >
             <div class="swiper-wrapper card-group">
               <div class="swiper-slide card">
@@ -396,8 +521,12 @@
     <script type="module" src="../main.js"></script>
     <script type="module">
       import Swiper from "swiper/bundle";
+      import { Navigation, Pagination } from "swiper/modules";
       import "swiper/css";
-      const swiper = new Swiper(".comment-swiper", {
+      import "swiper/css/navigation";
+      import "swiper/css/pagination";
+
+      const swiperComment = new Swiper(".comment-swiper", {
         spaceBetween: 24,
         slidesPerView: "auto",
         direction: "vertical",
@@ -416,6 +545,23 @@
             slidesPerView: "3",
             direction: "horizontal",
           },
+        },
+      });
+      const swiperIntro = new Swiper(".intro-swiper", {
+        autoplay: {
+          delay: 3000,
+          enabled: true,
+        },
+        breakpoints: {
+          768: {
+            autoplay: {
+              enabled: false,
+            },
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

@@ -1,6 +1,12 @@
 .h-banner {
   height: 880px;
 }
+.h-intro {
+  height: 351px;
+  @include media-breakpoint-up(md) {
+    height: 560px;
+  }
+}
 .h-40 {
   height: 40px;
 }
