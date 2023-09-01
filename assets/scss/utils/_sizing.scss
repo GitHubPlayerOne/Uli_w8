@@ -1,5 +1,14 @@
 .h-banner {
-  height: 880px;
+  height: 1775px; // 1879 - 104px
+  @include media-breakpoint-up(md) {
+    height: 1035px; // 1139 - 104px
+  }
+  @include media-breakpoint-up(xl) {
+    height: 880px;
+  }
+}
+.w-circle {
+  width: 196px;
 }
 .h-intro {
   height: 351px;
@@ -7,8 +16,20 @@
     height: 560px;
   }
 }
+
 .h-40 {
   height: 40px;
+}
+.h-351 {
+  height: 351px;
+}
+@include media-breakpoint-up(xl) {
+  .h-xl-676 {
+    height: 676px;
+  }
+  .h-xl-580 {
+    height: 580px;
+  }
 }
 .deco {
   &-circle-sm {

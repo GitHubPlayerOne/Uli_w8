@@ -11,25 +11,146 @@
     <title>ALPHABOX+</title>
   </head>
   <body>
+    <!-- header -->
     <%- include('./layout/header',{borderBottom:"border-bottom",
     navbarPosition:"navbar-mobile-index"}); -%>
-    <div class="h-banner bg-banner">
-      <div class="container-xxxl">
-        <div class="row gx-8">
-          <div class="col-3">
-            <div class="border-bottom">
+    <!-- banner -->
+    <section class="h-banner bg-banner position-relative zindex-1">
+      <div class="container-xxxl pt-7 pt-lg-14 overflow-hidden">
+        <div class="row mb-8 mb-md-6">
+          <div class="col-lg-4 col-xl-3 align-items-end d-none d-lg-flex">
+            <div class="border-bottom w-100">
               <a href="##" class="pb-2 fw-bold"
                 >最新消息！新版本 v15.4 釋出，搶先體驗！</a
               >
             </div>
           </div>
-          <div class="col-6"></div>
-          <div class="col-3"></div>
+          <div class="col-lg-4 col-xl-3 order-lg-1 mb-8 mb-lg-0">
+            <div class="border-top mb-0 mb-lg-36">
+              <p class="mt-1 fw-bold ls-sm">ALPHABOX+ STUDIO</p>
+            </div>
+            <p class="ls-sm fw-medium text-primary-600 d-none d-lg-block">
+              Copyright © 2023 Hexschool.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-xl-6 d-flex justify-content-center order-lg-0"
+          >
+            <img
+              src="../assets/images/circle.png"
+              alt="ALPHABOX+"
+              class="w-circle animation-rotate"
+            />
+          </div>
+          <div class="col-12 order-lg-2 text-center mt-8 mt-md-14">
+            <h1 class="en-font fs-5 fs-md-8">
+              <span class="ls-d-13 ls-md-4vw fw-normal">ALPHABOX</span> +
+            </h1>
+            <p class="fw-bold ls-md ls-md-test">
+              擁抱未來科技，專屬您的3D立體投影陪伴機器人
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gx-8 row-gap-4 row-gap-md-8 align-items-end translate-y"
+        >
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="../assets/images/diane.png"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="../assets/images/diane_square1.png"
+                  alt="Diane"
+                  class="h-351 h-xl-676 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Diane
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="../assets/images/felix.png"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="../assets/images/felix_square1.png"
+                  alt="Felix"
+                  class="h-351 h-xl-580 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Felix
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="../assets/images/karina.png"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="../assets/images/karina_square1.png"
+                  alt="Karina"
+                  class="h-351 h-xl-580 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Karina
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="../assets/images/vito.png"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="../assets/images/vito_square1.png"
+                  alt="Vito"
+                  class="h-351 h-xl-676 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Vito
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- intro -->
-    <div
+    <section
       class="bg-primary-radial-100 position-relative overflow-hidden pt-34 pt-md-36 pb-15 pb-md-13"
     >
       <img
@@ -45,7 +166,7 @@
         </div>
         <div class="border-top mb-4 mb-md-8"></div>
         <div class="container-xxxl">
-          <div class="row justify-content-between align-items-center mb-8">
+          <div class="row gx-8 justify-content-between align-items-center mb-8">
             <div class="swiper-arrow col-1 d-none d-md-block">
               <div class="swiper-button-prev">
                 <img
@@ -160,9 +281,9 @@
           <div class="bg-primary-linear-200 w-100 h-40 scale-neg-1"></div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- news -->
-    <div class="bg-primary-radial-100">
+    <section class="bg-primary-radial-100">
       <div class="container-xxl pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden">
         <h2
           class="fs-10 fs-md-12 ls-10 ls-md-12 mb-8 mb-md-10 text-center text-md-start me-neg-10 me-md-0"
@@ -237,9 +358,9 @@
           為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
         </p>
       </div>
-    </div>
+    </section>
     <!-- comments -->
-    <div
+    <section
       class="bg-primary-radial-200 pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden position-relative"
     >
       <div class="container-xxl fw-bold">
@@ -353,9 +474,9 @@
       >
         ALPHABOX+
       </p>
-    </div>
+    </section>
     <!-- contact -->
-    <div class="bg-primary-500">
+    <section class="bg-primary-500">
       <div class="container-xxl py-15 py-lg-36">
         <div class="row fw-bold">
           <div class="col-lg-5 mb-6 mb-lg-0">
@@ -411,14 +532,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- product -->
     <ol class="bg-primary-radial-100 d-flex flex-wrap">
       <li class="col-6 col-md-3">
         <div
-          class="bg-diane bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-diane bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             1
           </p>
           <h4
@@ -441,9 +562,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-felix bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-felix bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             2
           </p>
           <h4
@@ -466,9 +587,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-karina bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-karina bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             3
           </p>
           <h4
@@ -491,9 +612,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-vito bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-vito bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             4
           </p>
           <h4
@@ -515,7 +636,7 @@
         </div>
       </li>
     </ol>
-
+    <!-- footer -->
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

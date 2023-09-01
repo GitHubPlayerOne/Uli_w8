@@ -36,6 +36,7 @@
 @import "./utils/hover";
 @import "./utils/transition";
 @import "./utils/position";
+@import "./utils/animation";
 
 // component
 @import "./component/navber";
@@ -47,3 +48,7 @@
 @import "./layout/footer.scss";
 
 @import "./pages/index.scss";
+
+// * {
+//   outline: 1px solid orange;
+// }

@@ -19,8 +19,8 @@
 .bg-dark-70 {
   background-color: rgba($dark, 0.7) !important;
 }
-@include media-breakpoint-up(md) {
-  .bg-dark-md {
+@include media-breakpoint-up(lg) {
+  .bg-dark-lg {
     background-color: $dark !important;
   }
 }

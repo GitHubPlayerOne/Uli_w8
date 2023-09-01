@@ -66,6 +66,7 @@ $utilities: map-merge(
         class: of,
         values: cover contain,
       ),
+
     // 自訂
     "filter":
       (
@@ -83,6 +84,18 @@ $utilities: map-merge(
           0: 0,
           1: 1,
           2: 2,
+          3: 3,
+        ),
+      ),
+    // 自訂
+    "row-gap":
+      (
+        property: row-gap,
+        responsive: true,
+        class: row-gap,
+        values: (
+          4: 16px,
+          8: 32px,
         ),
       )
   )
