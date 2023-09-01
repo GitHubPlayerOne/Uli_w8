@@ -9,15 +9,18 @@
       rel="stylesheet"
     />
     <title>ALPHABOX+</title>
-    <script type="module" crossorigin src="/w8/assets/index-80d4c1dd.js"></script>
-    <link rel="modulepreload" crossorigin href="/w8/assets/bootstrap.min-986d0aa6.js">
-    <link rel="stylesheet" href="/w8/assets/bootstrap-0ec43525.css">
-    <link rel="stylesheet" href="/w8/assets/index-0705b292.css">
+    <script type="module" crossorigin src="/w8/assets/index-9b025aea.js"></script>
+    <link rel="modulepreload" crossorigin href="/w8/assets/bootstrap.min-886b4d84.js">
+    <link rel="stylesheet" href="/w8/assets/bootstrap-0b0e317d.css">
+    <link rel="stylesheet" href="/w8/assets/index-89588733.css">
   </head>
   <body>
+    <!-- header -->
     <header>
-  <nav class="navbar navbar-expand-lg bg-primary-100 navbar-shadow">
-    <div class="border-bottom w-100">
+  <nav class="navbar navbar-expand-lg bg-primary-100">
+    <div
+      class="border-bottom w-100 navbar-shadow position-relative zindex-3"
+    >
       <div
         class="container-xxl d-flex justify-content-between align-items-center text-center py-3 py-lg-4"
       >
@@ -86,7 +89,7 @@
     </div>
     <!-- mobile navbar start -->
     <div
-      class="navbar-mobile-index collapse flex-grow-0 fw-medium bg-primary-linear-100 d-lg-none w-100 text-center position-absolute"
+      class="navbar-mobile-index collapse flex-grow-0 fw-medium bg-primary-linear-100 d-lg-none w-100 text-center position-absolute zindex-2"
       id="navbarNav"
     >
       <ul class="navbar-nav gap-1 py-8">
@@ -128,16 +131,149 @@
     <!-- mobile navbar end -->
   </nav>
 </header>
-    <div class="h-banner bg-banner"></div>
+    <!-- banner -->
+    <section class="h-banner bg-banner position-relative zindex-1">
+      <div class="container-xxxl pt-7 pt-lg-14 overflow-hidden">
+        <div class="row mb-8 mb-md-6">
+          <div class="col-lg-4 col-xl-3 align-items-end d-none d-lg-flex">
+            <div class="border-bottom w-100">
+              <a href="##" class="pb-2 fw-bold"
+                >最新消息！新版本 v15.4 釋出，搶先體驗！</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-3 order-lg-1 mb-8 mb-lg-0">
+            <div class="border-top mb-0 mb-lg-36">
+              <p class="mt-1 fw-bold ls-sm">ALPHABOX+ STUDIO</p>
+            </div>
+            <p class="ls-sm fw-medium text-primary-600 d-none d-lg-block">
+              Copyright © 2023 Hexschool.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-xl-6 d-flex justify-content-center order-lg-0"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGICAMAAABsnYcUAAAAZlBMVEUAAAD////////9/f3////////////////////////////////////////////////////Z2dnZ2dnZ2dnZ2dna2trZ2dnZ2dn////Z2dnX19f////Y2Nja2trZ2dna2tr////Z2dkz/0fCAAAAIHRSTlMAIN8Q72Cgv0CAkHBQMLDPf+/fkLCggHBvQCDQ0L9gz+hNOLQAAAyTSURBVHja7N3LktsgEAVQ3kjoYS9Tlc39/69M0IyNrHGlRopsGLhnlUU0lbjdDbSAEURERERERERvN01aUH4dYATl5wF0gnKT+KsXlJuDmuEFZSYBNwAcrnNzgOyAQVBWErEsmaO16ZeVgs7glhnTDKPFAVpBOYbinIRQQojh4ATWImIoTkkIG7/ZQBAHKODCUJyVENEF5lhCKCEd/roKutNirwDY2x+6QwkRH19C4QQtpDNu9zMKRurPflN/pEmlbj+IkbjRB1p3VyzUxc+AP9KksreQGvarbvz+j0JhTR4dYKKeKXEzAGH3WDvboXezvyjsX1y7dTkbGg6EHrwTyQRcdieEXNV7v79rO9+fdw13cNOokD7XnQnh1k8bvTMhIt/dvgVody2xGRUCMBxIiPT0uDchggKg7CStiXWxWX0qB6m6HEwI0e0s8tf496VV+OQbbqRvPnltYPSBhEhPH8mnGIrZuVG0zABaJJc9E9hxmwFu1/TX3r8EOkC1Ozx8cKtRoQsK+wq11mLN7nparcI2QzVcl6IRmMVf2jqDhRGH6c4O+9p9N13DU9c0gdVy8Fj4XgGTeLXU7ruLUWmbBxQi4wedplEv1z189BMDMSBSodNpGvUO/r6Uixya344jAdNPm2nUG8hlTFL2vqq2onGbxYB720cie7Xk4jhewcr0pa1h39kDTatq0/o64uvi+r0bu61H5BkHodOokPqAb6Q7yy1mi/mxaTo03QXNaPtmbGr4RVle21GBhSIXz+0TZeib77gVogNmQQUIXeMvA+i/dEPfj5xZZKavBjxakd9ocGN4eC+f6xKBYMfhwpMVGbkYBnvr4DISuYSH3WhScUGax3Wz6WcyzW/GyUIucVjredo+BwX83r5SKXLrgewmUbHxyXtVV95NIB/rHFXxloj5SYuyL+5oxa8YhroPLZsn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"
+              alt="ALPHABOX+"
+              class="w-circle animation-rotate"
+            />
+          </div>
+          <div class="col-12 order-lg-2 text-center mt-8 mt-md-14">
+            <h1 class="en-font fs-5 fs-md-8">
+              <span class="ls-d-13 ls-md-4vw fw-normal">ALPHABOX</span> +
+            </h1>
+            <p class="fw-bold ls-md ls-md-test">
+              擁抱未來科技，專屬您的3D立體投影陪伴機器人
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gx-8 row-gap-4 row-gap-md-8 align-items-end translate-y"
+        >
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="/w8/assets/diane-aa7d0596.png "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="/w8/assets/diane_square1-bef5a901.png"
+                  alt="Diane"
+                  class="h-351 h-xl-676 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Diane
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="/w8/assets/felix-7868b60e.png "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="/w8/assets/felix_square1-27892aeb.png"
+                  alt="Felix"
+                  class="h-351 h-xl-580 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Felix
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="/w8/assets/karina-ba0556e2.png "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="/w8/assets/karina_square1-98fa96ca.png"
+                  alt="Karina"
+                  class="h-351 h-xl-580 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Karina
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="position-relative hover-shadow hover-translate-y transition-3"
+            >
+              <picture>
+                <source
+                  srcset="/w8/assets/vito-6007043a.png "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="/w8/assets/vito_square1-0c7041b7.png"
+                  alt="Vito"
+                  class="h-351 h-xl-676 w-100 of-cover"
+                />
+              </picture>
+              <h2
+                class="position-absolute top-0 start-50 translate-middle-x fs-8 en-font fw-normal pt-4"
+              >
+                Vito
+              </h2>
+              <a href="##" class="stretched-link d-block"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- intro -->
-    <div
+    <section
       class="bg-primary-radial-100 position-relative overflow-hidden pt-34 pt-md-36 pb-15 pb-md-13"
-      style="height: 1080px"
     >
       <img
         src="/w8/assets/carousel_mobile-1bfb21fb.png"
         alt="立體投影技術"
-        class="position-absolute top-0 w-50 h-100 of-cover filter-blur-brightness"
+        class="position-absolute top-0 col-md-10 col-lg-6 h-100 of-cover filter-blur-brightness"
       />
       <div class="position-relative zindex-1">
         <div class="container-xxxl">
@@ -145,14 +281,126 @@
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12 mb-2 mb-md-3">什麼是</h2>
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12">ALPHABOX+</h2>
         </div>
-        <div class="border-top"></div>
+        <div class="border-top mb-4 mb-md-8"></div>
         <div class="container-xxxl">
+          <div class="row gx-8 justify-content-between align-items-center mb-8">
+            <div class="swiper-arrow col-1 d-none d-md-block">
+              <div class="swiper-button-prev">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC"
+                  alt="prev"
+                  class="scale-neg-1"
+                />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="swiper intro-swiper h-intro">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="/w8/assets/carousel-a8d8f3a0.png "
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="/w8/assets/carousel_mobile-1bfb21fb.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">01</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="/w8/assets/about_us-00521c70.png "
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="/w8/assets/about_us-00521c70.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">02</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="position-relative h-100 d-flex justify-content-md-end align-items-end align-items-md-center"
+                    >
+                      <picture class="position-absolute top-0 h-100 w-100">
+                        <source
+                          srcset="/w8/assets/screen-3ef61667.png "
+                          media="(min-width:768px)"
+                        />
+                        <img
+                          src="/w8/assets/screen-3ef61667.png"
+                          alt="立體投影技術"
+                          class="of-cover h-100 w-100"
+                        />
+                      </picture>
+                      <div
+                        class="position-relative text-md-end px-4 px-md-10 pb-4 pb-md-0"
+                      >
+                        <p class="en-font fs-16 fs-md-24">03</p>
+                        <h3
+                          class="fs-6 fs-md-8 ls-6 ls-md-8 me-md-neg-8 mb-2 mb-md-4 fw-bold"
+                        >
+                          立體投影技術
+                        </h3>
+                        <p class="fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-arrow col-1 d-none d-md-block">
+              <div class="swiper-button-next">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwCAYAAAC47FD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7dpdbQJBFAXgoQqQgIU6QEIlVAIO2iooKCgOKqE4qITFQSXczgYS/pbd9oFkL/m+ZF6WBF5OTrh3pxQAAAAAAAAAuImIeK5nVuAetGGup2mDXeAe1DAvY+dbW5NeDfG0np84eCmQWQ3xIk412prU9iE+9y7YpFSDO49ujaGRlGpwv+K6D21NKvs1Xp9GW5NKHNZ4faz4yCEu13h9rPgYv7hc4w39DZn1fd+k4weiwLgt61lNJpPt+QcCTVbbet5qqNfHDx8K5LU9fyDQZLSq57G286bAmMTunvR/hsJ5gTGKwx3pIe1q77XAmNWQrv8Q5k14scLYxfCr77aVFwUyGGjnT61MGnF9EGzC0Ec20T0ItheVpgUy6WhnrUxOcbqms4ojt6NB0CqO3PbtbBXHfahBftLKAAAAAAAAwG38AmITt1iVUD1IAAAAAElFTkSuQmCC" alt="prev" />
+              </div>
+            </div>
+          </div>
           <div class="bg-primary-linear-200 w-100 h-40 scale-neg-1"></div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- news -->
-    <div class="bg-primary-radial-100">
+    <section class="bg-primary-radial-100">
       <div class="container-xxl pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden">
         <h2
           class="fs-10 fs-md-12 ls-10 ls-md-12 mb-8 mb-md-10 text-center text-md-start me-neg-10 me-md-0"
@@ -227,9 +475,9 @@
           為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
         </p>
       </div>
-    </div>
+    </section>
     <!-- comments -->
-    <div
+    <section
       class="bg-primary-radial-200 pt-15 pt-md-40 pb-20 pb-md-10 overflow-hidden position-relative"
     >
       <div class="container-xxl fw-bold">
@@ -252,11 +500,11 @@
           </div>
         </div>
       </div>
-      <div class="overflow-hidden">
-        <div class="container-xxl fw-bold">
+      <div class="overflow-hidden position-relative">
+        <div class="container-xxl fw-bold swiper-disable">
           <!-- Swiper -->
           <div
-            class="swiper comment-swiper text-dark overflow-visible mb-0 mb-md-9 cursor-grab"
+            class="swiper comment-swiper overflow-visible mb-0 mb-md-9 cursor-grab"
           >
             <div class="swiper-wrapper card-group">
               <div class="swiper-slide card">
@@ -343,9 +591,9 @@
       >
         ALPHABOX+
       </p>
-    </div>
+    </section>
     <!-- contact -->
-    <div class="bg-primary-500">
+    <section class="bg-primary-500">
       <div class="container-xxl py-15 py-lg-36">
         <div class="row fw-bold">
           <div class="col-lg-5 mb-6 mb-lg-0">
@@ -401,14 +649,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- product -->
     <ol class="bg-primary-radial-100 d-flex flex-wrap">
       <li class="col-6 col-md-3">
         <div
-          class="bg-diane bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-diane bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             1
           </p>
           <h4
@@ -431,9 +679,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-felix bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-felix bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             2
           </p>
           <h4
@@ -456,9 +704,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-karina bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-karina bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             3
           </p>
           <h4
@@ -481,9 +729,9 @@
       </li>
       <li class="col-6 col-md-3">
         <div
-          class="bg-vito bg-dark-70 bg-dark-md bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-10 py-6 pb-md-14 border-end position-relative"
+          class="bg-vito bg-dark-70 bg-dark-lg bg-blend-darken hover-bg-dark-70 transition-3 px-3 px-md-4 px-lg-10 py-6 pb-md-14 border-end position-relative"
         >
-          <p class="num-font text-center fw-light fs-32 fs-md-100 mb-4 mb-md-5">
+          <p class="num-font text-center fw-light fs-32 fs-lg-100 mb-4 mb-md-5">
             4
           </p>
           <h4
@@ -505,7 +753,7 @@
         </div>
       </li>
     </ol>
-
+    <!-- footer -->
     <footer class="container-xxl">
   <div class="row text-dark align-items-center py-10 py-md-12">
     <div class="col-md-5 mb-2 mb-md-0">
