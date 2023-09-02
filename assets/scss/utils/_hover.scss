@@ -33,6 +33,11 @@
     transform: scale(1.05);
   }
 }
+.hover-border-bottom {
+  &:hover {
+    border-bottom: 1px solid $primary-500 !important;
+  }
+}
 .hover-underline {
   position: relative;
   &::before {

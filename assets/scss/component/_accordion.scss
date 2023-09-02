@@ -1,0 +1,41 @@
+.accordion {
+  &-item {
+    border-bottom: 2px dotted $white;
+  }
+  &-button {
+    align-items: start;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    &::after {
+      content: none;
+    }
+    .icon-add {
+      display: block;
+      font-size: 40px;
+    }
+    .icon-remove {
+      display: none;
+      font-size: 40px;
+    }
+    &:not(.collapsed) {
+      .icon-add {
+        display: none;
+      }
+      .icon-remove {
+        display: block;
+      }
+    }
+  }
+  &-header {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &-body {
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+}

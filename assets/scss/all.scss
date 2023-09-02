@@ -21,6 +21,7 @@
 @import "../node_modules/bootstrap/scss/modal";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/accordion";
 
 // bootstrap api
 @import "../node_modules/bootstrap/scss/utilities/api";
@@ -37,12 +38,14 @@
 @import "./utils/transition";
 @import "./utils/position";
 @import "./utils/animation";
+@import "./utils/active";
 
 // component
 @import "./component/navber";
 @import "./component/forms";
 @import "./component/card";
 @import "./component/swiper";
+@import "./component/accordion";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";

@@ -25,7 +25,7 @@ $utilities: map-merge(
         class: bg,
         values: $bg-gradient,
       ),
-    // 增加 500 字重
+    // 增加 500, 900 字重
     "font-weight":
       map-merge(
         map-get($utilities, "font-weight"),
@@ -35,6 +35,21 @@ $utilities: map-merge(
               map-get(map-get($utilities, "font-weight"), "values"),
               (
                 medium: $font-weight-medium,
+                black: $font-weight-black,
+              )
+            ),
+        )
+      ),
+    // 增加 透明色
+    "border-color":
+      map-merge(
+        map-get($utilities, "border-color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "border-color"), "values"),
+              (
+                transparent: transparent,
               )
             ),
         )
@@ -53,6 +68,18 @@ $utilities: map-merge(
         property: border-right,
         responsive: true,
         class: border-end,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+            var(--#{$prefix}border-color),
+          0: 0,
+        ),
+      ),
+    // 增加響應式
+    "border-bottom":
+      (
+        property: border-bottom,
+        responsive: true,
+        class: border-bottom,
         values: (
           null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
             var(--#{$prefix}border-color),
@@ -97,6 +124,13 @@ $utilities: map-merge(
           4: 16px,
           8: 32px,
         ),
+      ),
+    // 自訂
+    "border-style":
+      (
+        property: border-bottom-style,
+        class: border-bottom-style,
+        values: dotted,
       )
   )
 );
