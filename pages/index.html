@@ -160,7 +160,16 @@
       />
       <div class="position-relative zindex-1">
         <div class="container-xxxl">
-          <div class="bg-primary-linear-200 w-100 h-40 mb-4 mb-md-2"></div>
+          <div class="swiper bg-slide-swiper h-40 mb-4 mb-md-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+            </div>
+          </div>
+          <!-- <div class="bg-slide w-100 h-40 mb-4 mb-md-2"></div> -->
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12 mb-2 mb-md-3">什麼是</h2>
           <h2 class="fs-6 fs-md-12 ls-6 ls-md-12">ALPHABOX+</h2>
         </div>
@@ -278,7 +287,15 @@
               </div>
             </div>
           </div>
-          <div class="bg-primary-linear-200 w-100 h-40 scale-neg-1"></div>
+          <div class="swiper bg-slide-swiper-reverse h-40">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+              <div class="swiper-slide bg-slide"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -291,10 +308,11 @@
           最新消息
         </h2>
         <div class="row fw-bold gx-0 mb-10 mb-md-19">
-          <div class="col-12 position-relative">
+          <div class="col-12 position-relative hover-icon-rotate">
             <div class="px-4 py-8 py-mb-10 border-top border-bottom">
               <p class="d-flex align-items-center ls-4 mb-2">
-                <span class="material-icons fs-6 me-4"> emergency </span
+                <span class="deco-icon material-icons fs-6 me-4">
+                  emergency </span
                 >2023.06.30
               </p>
               <h3 class="fs-5 ls-5 mb-3">產品升級公告</h3>
@@ -316,12 +334,15 @@
             </div>
             <a href="##" class="stretched-link d-block"></a>
           </div>
-          <div class="col-md-6 position-relative d-flex flex-column">
+          <div
+            class="col-md-6 position-relative d-flex flex-column hover-icon-rotate"
+          >
             <div
               class="px-4 py-8 py-mb-10 border-bottom border-end-md flex-grow-1"
             >
               <p class="d-flex align-items-center ls-4 mb-2">
-                <span class="material-icons fs-6 me-4"> emergency </span
+                <span class="deco-icon material-icons fs-6 me-4">
+                  emergency </span
                 >2023.06.30
               </p>
               <h3 class="fs-5 ls-5 mb-3">限時優惠活動</h3>
@@ -333,10 +354,13 @@
             </div>
             <a href="##" class="stretched-link d-block"></a>
           </div>
-          <div class="col-md-6 position-relative d-flex flex-column">
+          <div
+            class="col-md-6 position-relative d-flex flex-column hover-icon-rotate"
+          >
             <div class="px-4 py-8 py-mb-10 border-bottom flex-grow-1">
               <p class="d-flex align-items-center ls-4 mb-2">
-                <span class="material-icons fs-6 me-4"> emergency </span
+                <span class="deco-icon material-icons fs-6 me-4">
+                  emergency </span
                 >2023.04.18
               </p>
               <h3 class="fs-5 ls-5 mb-3">新功能上線</h3>
@@ -349,11 +373,17 @@
             <a href="##" class="stretched-link d-block"></a>
           </div>
         </div>
-        <img
-          src="/assets/images/circle-more.png"
-          alt=""
-          class="d-block mx-auto mb-0 mb-md-24"
-        />
+        <div class="position-relative hover-scale">
+          <img
+            src="/assets/images/circle-more.png"
+            alt="查看更多"
+            class="d-block mx-auto mb-0 mb-md-24 animation-rotate"
+          />
+          <p class="position-absolute top-50 start-50 translate-middle">
+            查看更多
+          </p>
+          <a href="##" class="stretched-link d-block"></a>
+        </div>
         <p class="fw-bold text-end d-none d-md-block">
           為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
         </p>
@@ -379,7 +409,9 @@
             <p>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
           </div>
           <div class="col-12 order-lg-2">
-            <span class="material-icons fs-20"> emergency </span>
+            <span class="material-icons fs-20 animation-rotate">
+              emergency
+            </span>
           </div>
         </div>
       </div>
@@ -489,7 +521,9 @@
             <p>立即體驗神奇功能並享限時優惠！</p>
           </div>
           <div class="col-lg-7">
-            <span class="material-icons fs-20 mb-4"> emergency </span>
+            <span class="material-icons fs-20 mb-4 animation-rotate">
+              emergency
+            </span>
             <div class="form-floating mb-4">
               <input
                 type="email"
@@ -685,6 +719,33 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      const swiperBgSlideSwiper = new Swiper(".bg-slide-swiper", {
+        centeredSlides: true,
+        speed: 3000,
+        autoplay: {
+          delay: 0,
+
+          disableOnInteraction: false,
+        },
+        allowTouchMove: false,
+        slidesPerView: "auto",
+        loop: true,
+      });
+      const swiperBgSlideSwiperReverse = new Swiper(
+        ".bg-slide-swiper-reverse",
+        {
+          centeredSlides: true,
+          speed: 3000,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: true,
+          },
+          allowTouchMove: false,
+          slidesPerView: "auto",
+          loop: true,
+        }
+      );
     </script>
   </body>
 </html>

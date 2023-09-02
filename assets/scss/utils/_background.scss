@@ -24,3 +24,13 @@
     background-color: $dark !important;
   }
 }
+.bg-slide {
+  background: linear-gradient(
+    to right,
+    $primary-200,
+    $primary-200,
+    $primary-100,
+    $primary-200,
+    $primary-200
+  );
+}
