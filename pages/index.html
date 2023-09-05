@@ -373,16 +373,17 @@
             <a href="##" class="stretched-link d-block"></a>
           </div>
         </div>
-        <div class="position-relative hover-scale">
-          <img
-            src="/assets/images/circle-more.png"
-            alt="查看更多"
-            class="d-block mx-auto mb-0 mb-md-24 animation-rotate"
-          />
-          <p class="position-absolute top-50 start-50 translate-middle">
-            查看更多
-          </p>
-          <a href="##" class="stretched-link d-block"></a>
+        <div class="d-flex justify-content-center mb-0 mb-md-24">
+          <a href="##" class="position-relative hover-scale transition-3">
+            <img
+              src="/assets/images/circle-more.png"
+              alt="查看更多"
+              class="animation-rotate"
+            />
+            <span class="position-absolute top-50 start-50 translate-middle">
+              查看更多
+            </span>
+          </a>
         </div>
         <p class="fw-bold text-end d-none d-md-block">
           為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
@@ -677,9 +678,6 @@
     <script type="module">
       import Swiper from "swiper/bundle";
       import { Navigation, Pagination } from "swiper/modules";
-      import "swiper/css";
-      import "swiper/css/navigation";
-      import "swiper/css/pagination";
 
       const swiperComment = new Swiper(".comment-swiper", {
         spaceBetween: 24,
@@ -746,6 +744,7 @@
           loop: true,
         }
       );
+      console.log(swiperComment);
     </script>
   </body>
 </html>
