@@ -19,6 +19,7 @@
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/close";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/accordion";
@@ -46,6 +47,9 @@
 @import "./component/card";
 @import "./component/swiper";
 @import "./component/accordion";
+@import "./component/buttons";
+@import "./component/modal";
+@import "./component/scrollbar";
 
 // * {
 //   outline: 1px solid orange;

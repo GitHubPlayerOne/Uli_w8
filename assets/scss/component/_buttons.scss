@@ -1,0 +1,12 @@
+.btn-pill {
+  border-radius: 50rem;
+  border: 1px solid $white;
+  &:hover {
+    background: $white;
+    color: $primary-100;
+  }
+}
+:not(.btn-check) + .btn-pill:active {
+  background: $white;
+  color: $black;
+}

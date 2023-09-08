@@ -1,0 +1,15 @@
+.scroll-po {
+  // 軌道
+  &::-webkit-scrollbar-track-piece {
+    border-radius: 4px;
+    background: $light;
+  }
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  // 滑塊
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $dark;
+  }
+}

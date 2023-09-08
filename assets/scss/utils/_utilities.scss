@@ -25,11 +25,12 @@ $utilities: map-merge(
         class: bg,
         values: $bg-gradient,
       ),
-    // 增加 500, 900 字重
+    // 增加 500, 900 字重 & 響應式
     "font-weight":
       map-merge(
         map-get($utilities, "font-weight"),
         (
+          responsive: true,
           values:
             map-merge(
               map-get(map-get($utilities, "font-weight"), "values"),
@@ -131,6 +132,27 @@ $utilities: map-merge(
         property: border-bottom-style,
         class: border-bottom-style,
         values: dotted,
+      ),
+    // 自訂
+    "list-style-type":
+      (
+        property: list-style-type,
+        class: list-style,
+        values: decimal,
+      ),
+    // 增加 gap: 15px
+    "gap":
+      map-merge(
+        map-get($utilities, "gap"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "gap"), "values"),
+              (
+                15: 15px,
+              )
+            ),
+        )
       )
   )
 );
