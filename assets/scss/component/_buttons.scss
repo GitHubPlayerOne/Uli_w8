@@ -10,3 +10,12 @@
   background: $white;
   color: $black;
 }
+.btn-white {
+  &:hover {
+    background: $primary-100;
+    color: $white;
+    path {
+      fill: $white;
+    }
+  }
+}

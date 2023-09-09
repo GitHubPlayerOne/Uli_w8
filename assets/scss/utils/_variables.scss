@@ -71,6 +71,7 @@ $spacers: (
   31: $spacer * 7.75,
   34: $spacer * 8.5,
   36: $spacer * 9,
+  39: $spacer * 9.75,
   40: $spacer * 10,
   42: $spacer * 10.5,
   54: $spacer * 13.5,
@@ -110,6 +111,7 @@ $font-sizes: (
   24: $font-size-base * 6,
   32: $font-size-base * 8,
   100: $font-size-base * 25,
+  d-7: $font-size-base * 0.875,
 );
 
 $headings-margin-bottom: 0;

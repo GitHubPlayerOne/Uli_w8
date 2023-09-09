@@ -56,6 +56,20 @@ $utilities: map-merge(
             ),
         )
       ),
+    // 增加 尺寸
+    "border-width":
+      map-merge(
+        map-get($utilities, "border-width"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "border-width"), "values"),
+              (
+                12: 12px,
+              )
+            ),
+        )
+      ),
     // 自訂
     "letter-spacing":
       (

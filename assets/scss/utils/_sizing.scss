@@ -7,6 +7,15 @@
     height: 880px;
   }
 }
+.h-about-banner {
+  height: 280px;
+}
+.h-about-future {
+  height: 147px;
+  @include media-breakpoint-up(md) {
+    height: 315px;
+  }
+}
 .w-circle {
   width: 196px;
 }
@@ -29,22 +38,5 @@
   }
   .h-xl-580 {
     height: 580px;
-  }
-}
-.deco {
-  &-circle-sm {
-    width: 12px;
-    height: 12px;
-    @include media-breakpoint-down(lg) {
-      width: 8px;
-      height: 8px;
-    }
-  }
-  &-line {
-    width: 124px;
-    height: 12px;
-    @include media-breakpoint-down(lg) {
-      height: 8px;
-    }
   }
 }

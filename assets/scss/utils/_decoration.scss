@@ -1,0 +1,31 @@
+.deco {
+  &-circle-sm {
+    width: 12px;
+    height: 12px;
+    @include media-breakpoint-down(lg) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &-line {
+    width: 124px;
+    height: 12px;
+    @include media-breakpoint-down(lg) {
+      height: 8px;
+    }
+  }
+  &-mark {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 12px;
+      background: $light;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+      z-index: -1;
+    }
+  }
+}

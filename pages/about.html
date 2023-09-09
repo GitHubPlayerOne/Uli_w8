@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>關於我們 | ALPHABOX+</title>
+  </head>
+  <body>
+    <%- include('./layout/header',{borderBottom:"",
+    navbarPosition:"navbar-mobile"}); -%>
+    <!-- banner -->
+    <div class="bg-primary-radial-100 pt-15 pt-md-40 pb-20 pb-md-39">
+      <div class="container-xxl mb-6 mb-md-9">
+        <h2 class="fs-10 fs-md-16 fw-bold fw-md-black mb-6 mb-md-8">
+          <span class="ls-100">關於我</span>們
+        </h2>
+        <div class="row">
+          <div class="col-lg-6 mb-8 mb-lg-0">
+            <p class="fw-medium">
+              創立於2021年，我們的使命是將科技與人性化設計相結合，為您打造最佳的3D立體投影陪伴機器人。憑藉創新的技術、卓越的研發團隊以及對品質的追求，我們致力於為全球用戶提供最先進且易用的陪伴機器人。
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <ul
+              class="text-md-end fs-d-7 fw-light d-flex d-md-block flex-column gap-6"
+            >
+              <li>
+                我們擁抱變革，追求技術創新，以提供更卓越的產品給全球用戶。
+              </li>
+              <li>我們始終以用戶需求為核心，致力於提供最滿意的產品與服務。</li>
+              <li>
+                我們堅持高品質標準，確保每一款產品都經過嚴格的測試與品質把控。
+              </li>
+              <li>我們重視團隊協作，鼓勵創意交流，共同為實現願景而努力。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source
+          srcset="/assets/images/about_us.png"
+          media="(min-width:768px)"
+        />
+        <img
+          src="/assets/images/mobile/about_us_mobile.png"
+          alt="about_us"
+          class="h-about-banner of-cover w-100 mb-4 mb-md-11"
+        />
+      </picture>
+      <div class="container-xxl">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-1 text-center text-lg-end">
+            <span class="material-icons fs-20 mb-2 mb-lg-0 animation-rotate">
+              emergency
+            </span>
+          </div>
+          <div class="col-lg-7">
+            <p class="fw-medium">
+              我們相信科技的力量能夠改變人類生活。通過不斷創新與優化，我們期待為您打造一款具有高度智能、豐富功能且呈現真實感的3D立體投影陪伴機器人，讓科技成為您生活中真誠的夥伴。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxxl text-dark pt-6 pt-md-10">
+      <!-- intro -->
+      <div class="swiper swiper-about mb-6 mb-md-10">
+        <div class="swiper-wrapper">
+          <!-- 跑 loop 需要 slidesPerView * 2 以上的 slide 量，所以圖片多複製一份 -->
+          <div class="swiper-slide">
+            <img src="/assets/images/hand.png" alt="hand" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/screen.png" alt="screen" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/box.png" alt="box" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/hand.png" alt="hand" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/screen.png" alt="screen" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/box.png" alt="box" />
+          </div>
+        </div>
+      </div>
+      <h3 class="fs-6 fs-md-12 fs-lg-24 fw-black text-center mb-6 mb-md-20">
+        <span class="ls-100 ls-lg-vw-lg">ALPHABOX</span>+
+      </h3>
+      <div
+        class="row justify-content-between fw-medium align-items-end mb-6 mb-md-20"
+      >
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          我們提供多款3D立體投影陪伴機器人，涵蓋知識型、娛樂型、生活型和情感型等不同類別，以滿足您的各種需求。每款產品都經過精心設計，具備高度智能化、多功能和人性化操作等特點，讓您在日常生活中獲得更便利的陪伴體驗。
+        </div>
+        <div class="col-lg-4">
+          此外，我們還提供完善的售後服務，包括
+          <span class="deco-mark mx-2 text-nowrap">產品保固</span>、<span
+            class="deco-mark mx-2 text-nowrap"
+            >技術支援</span
+          >
+          及
+          <span class="deco-mark mx-2 text-nowrap">線上客服</span>
+          協助，確保您在購買與使用過程中得到全面支持。
+        </div>
+      </div>
+      <div class="border-bottom border-dark mb-3"></div>
+      <div class="border-bottom border-dark border-12"></div>
+    </div>
+    <!-- future -->
+    <div class="container-xxl text-dark py-15 py-md-40">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <img
+            src="/assets/images/meeting.png"
+            alt="meeting"
+            class="h-about-future of-cover w-100 mb-4 mb-md-0"
+          />
+        </div>
+        <div class="col-md-5">
+          <p class="fw-medium">
+            展望未來，我們將繼續投入研發，引領3D立體投影陪伴機器人技術的發展。通過結合虛擬現實、擴增現實和人工智能等領域的最新技術，我們將努力為用戶帶來更多前所未有的創新體驗。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- recruitment -->
+    <div class="bg-dark">
+      <div class="container-xxl py-12 py-md-6">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8 mb-6 mb-md-0">
+            <p class="fw-medium">
+              我們熱忱歡迎有志之士加入我們的團隊，共同創造更美好的未來。如果您對科技充滿熱情，並擁有相關領域的專業知識，請隨時查看我們的招聘信息或與我們聯繫，讓我們攜手共進。
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <a href="##" class="btn btn-white d-block fw-medium">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="me-1 align-bottom"
+              >
+                <mask
+                  id="mask0_6656_66"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                >
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_6656_66)">
+                  <path
+                    d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+              查看職缺</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script type="module">
+      import Swiper from "swiper/bundle";
+      import { Navigation, Pagination } from "swiper/modules";
+      const swiperAbout = new Swiper(".swiper-about", {
+        spaceBetween: 40,
+        slidesPerView: "1",
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: "2",
+          },
+          992: {
+            slidesPerView: "3",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

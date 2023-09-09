@@ -31,16 +31,6 @@
 @import "./base/fontStyle";
 @import "./base/base";
 
-// utilities
-@import "./utils/sizing";
-@import "./utils/background";
-@import "./utils/container";
-@import "./utils/hover";
-@import "./utils/transition";
-@import "./utils/position";
-@import "./utils/animation";
-@import "./utils/active";
-
 // component
 @import "./component/navber";
 @import "./component/forms";
@@ -50,6 +40,17 @@
 @import "./component/buttons";
 @import "./component/modal";
 @import "./component/scrollbar";
+
+// utilities
+@import "./utils/sizing";
+@import "./utils/background";
+@import "./utils/container";
+@import "./utils/hover";
+@import "./utils/transition";
+@import "./utils/position";
+@import "./utils/animation";
+@import "./utils/active";
+@import "./utils/decoration";
 
 // * {
 //   outline: 1px solid orange;
