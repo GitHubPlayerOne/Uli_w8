@@ -1,0 +1,321 @@
+<div class="bg-dark">
+  <!-- product select -->
+  <ul
+    class="product-select d-flex justify-content-center gap-2 gap-md-6 en-font py-4"
+  >
+    <li>
+      <a
+        href="product-diane.html"
+        class="btn btn-pill px-4 px-lg-20 py-1 fs-md-5 <%= page === 'diane' ? 'active' : '' %>"
+        >Diane</a
+      >
+    </li>
+    <li>
+      <a
+        href="product-felix.html"
+        class="btn btn-pill px-4 px-lg-20 py-1 fs-md-5 <%= page === 'felix' ? 'active' : '' %>"
+        >Felix</a
+      >
+    </li>
+    <li>
+      <a
+        href="product-karina.html"
+        class="btn btn-pill px-4 px-lg-20 py-1 fs-md-5 <%= page === 'karina' ? 'active' : '' %>"
+        >Karina</a
+      >
+    </li>
+    <li>
+      <a
+        href="product-vito.html"
+        class="btn btn-pill px-4 px-lg-20 py-1 fs-md-5 <%= page === 'vito' ? 'active' : '' %>"
+        >Vito</a
+      >
+    </li>
+  </ul>
+  <!-- product swiper -->
+  <div class="position-relative pb-6 pb-lg-0">
+    <div class="row align-items-center gx-0">
+      <!-- swiper-product -->
+      <div class="swiper swiper-product col-lg-6 mb-4 mb-lg-0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <% if(page === 'diane'){ %>
+            <img src="/assets/images/diane_square1.png" alt="Diane" /> <% } %>
+            <% if(page === 'felix'){ %>
+            <img src="/assets/images/felix_square1.png" alt="Felix" /> <% } %>
+            <% if(page === 'karina'){ %>
+            <img src="/assets/images/karina_square1.png" alt="Karina" /> <% } %>
+            <% if(page === 'vito'){ %>
+            <img src="/assets/images/vito_square1.png" alt="Vito" /> <% } %>
+          </div>
+          <div class="swiper-slide">
+            <% if(page === 'diane'){ %>
+            <img src="/assets/images/diane_square2.png" alt="Diane" /> <% } %>
+            <% if(page === 'felix'){ %>
+            <img src="/assets/images/felix_square2.png" alt="Felix" /> <% } %>
+            <% if(page === 'karina'){ %>
+            <img src="/assets/images/karina_square2.png" alt="Karina" /> <% } %>
+            <% if(page === 'vito'){ %>
+            <img src="/assets/images/vito_square2.png" alt="Vito" /> <% } %>
+          </div>
+        </div>
+        <div class="swiper-button-prev scale-md-lg ms-md-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+          >
+            <g>
+              <mask
+                id="mask0_446_2479"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="48"
+                height="48"
+              >
+                <rect width="48" height="48" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_446_2479)">
+                <path
+                  d="M24 30.577L25.377 29.2L21.177 25H31V23H21.177L25.377 18.8L24 17.423L17.423 24L24 30.577ZM24.0067 42C21.5176 42 19.1774 41.5277 16.9862 40.583C14.795 39.6384 12.8889 38.3564 11.2679 36.737C9.64705 35.1176 8.36383 33.2133 7.4183 31.0241C6.47277 28.8349 6 26.4958 6 24.0067C6 21.5176 6.47232 19.1774 7.41695 16.9862C8.36162 14.795 9.64365 12.8889 11.2631 11.268C12.8825 9.64705 14.7867 8.36383 16.9759 7.4183C19.1651 6.47277 21.5042 6 23.9933 6C26.4824 6 28.8226 6.47232 31.0138 7.41695C33.205 8.36162 35.1111 9.64365 36.732 11.263C38.353 12.8824 39.6362 14.7867 40.5817 16.9759C41.5272 19.1651 42 21.5042 42 23.9933C42 26.4824 41.5277 28.8226 40.583 31.0138C39.6384 33.205 38.3564 35.1111 36.737 36.732C35.1176 38.353 33.2133 39.6362 31.0241 40.5817C28.8349 41.5272 26.4958 42 24.0067 42ZM24 40C28.4667 40 32.25 38.45 35.35 35.35C38.45 32.25 40 28.4667 40 24C40 19.5333 38.45 15.75 35.35 12.65C32.25 9.55 28.4667 8 24 8C19.5333 8 15.75 9.55 12.65 12.65C9.55 15.75 8 19.5333 8 24C8 28.4667 9.55 32.25 12.65 35.35C15.75 38.45 19.5333 40 24 40Z"
+                  fill="white"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next scale-md-lg me-md-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+          >
+            <mask
+              id="mask0_446_2482"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="48"
+              height="48"
+            >
+              <rect width="48" height="48" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_446_2482)">
+              <path
+                d="M24 30.577L30.577 24L24 17.423L22.6231 18.8L26.823 23H17V25H26.823L22.6231 29.2L24 30.577ZM24.0067 42C21.5176 42 19.1774 41.5277 16.9862 40.583C14.795 39.6384 12.8889 38.3564 11.2679 36.737C9.64705 35.1176 8.36383 33.2133 7.4183 31.0241C6.47277 28.8349 6 26.4958 6 24.0067C6 21.5176 6.47232 19.1774 7.41695 16.9862C8.36162 14.795 9.64365 12.8889 11.2631 11.268C12.8825 9.64705 14.7867 8.36383 16.9759 7.4183C19.1651 6.47277 21.5042 6 23.9933 6C26.4824 6 28.8226 6.47232 31.0138 7.41695C33.205 8.36162 35.1111 9.64365 36.732 11.263C38.353 12.8824 39.6362 14.7867 40.5817 16.9759C41.5272 19.1651 42 21.5042 42 23.9933C42 26.4824 41.5277 28.8226 40.583 31.0138C39.6384 33.205 38.3564 35.1111 36.737 36.732C35.1176 38.353 33.2133 39.6362 31.0241 40.5817C28.8349 41.5272 26.4958 42 24.0067 42ZM24 40C28.4667 40 32.25 38.45 35.35 35.35C38.45 32.25 40 28.4667 40 24C40 19.5333 38.45 15.75 35.35 12.65C32.25 9.55 28.4667 8 24 8C19.5333 8 15.75 9.55 12.65 12.65C9.55 15.75 8 19.5333 8 24C8 28.4667 9.55 32.25 12.65 35.35C15.75 38.45 19.5333 40 24 40Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="px-3 px-md-10">
+          <h2 class="en-font fs-10 fw-normal"><%= productName %></h2>
+          <h3 class="fs-4">
+            <% if(page === 'diane'){ %> 知識型 <% } %> <% if(page ===
+            'felix'){%> 娛樂型 <% } %> <% if(page === 'karina'){ %> 生活型 <% }
+            %> <%if(page === 'vito'){ %> 情感型 <% } %>
+          </h3>
+          <p class="mb-2">
+            <% if(page === 'diane'){ %> 學術領導/知識分享/智能問答 <% } %> <%
+            if(page === 'felix'){ %> 音樂播放/語音互動/遊戲陪伴 <% } %> <%
+            if(page === 'karina'){ %> 健康提醒/日程安排/智能家居 <% } %> <%
+            if(page === 'vito'){ %> 情感識別/心情分析/心靈支持 <% } %>
+          </p>
+          <picture>
+            <source
+              srcset="../assets/images/icon/product-arrow.png"
+              media="(min-width:768px)"
+            />
+            <img src="../assets/images/icon/news-arrow-sm.png" alt="arrow" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-center position-lg-absolute start-50 translate-middle-lg-x zindex-1"
+      style="bottom: 60px"
+    >
+      <a href="#toIntro" class="position-relative hover-scale transition-3">
+        <picture>
+          <source
+            srcset="../assets/images/circle-lg.png"
+            media="(min-width:1200px)"
+          />
+          <img
+            src="../assets/images/circle-sm.png"
+            alt="arrow"
+            class="animation-rotate"
+          />
+        </picture>
+        <span
+          class="material-icons fs-6 fs-lg-10 position-absolute top-50 start-50 translate-middle"
+        >
+          arrow_downward
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- product introduction -->
+<div class="container-xxl text-dark pt-15 pt-md-20 pb-20 pb-md-30" id="toIntro">
+  <div class="row justify-content-between fw-medium mb-8 mb-md-30">
+    <div class="col-md-8 col-xl-4">
+      <div class="d-flex align-items-center mb-6 mb-md-8">
+        <span class="material-icons me-3 fs-10 animation-rotate">
+          emergency
+        </span>
+        <h4 class="fs-5">學術領導/知識分享/智能問答</h4>
+      </div>
+      <p>
+        歡迎來到ALPHABOX+的全新世界！在這裡，我們很榮幸地向您介紹我們的最新力作
+        - 3D立體投影機器人 <%= productName %>！
+      </p>
+    </div>
+    <div class="col-2 d-none d-md-block">
+      <p class="text-end">ALPHABOX+</p>
+    </div>
+  </div>
+  <div
+    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-6 row-gap-md-16 row-gap-lg-26"
+  >
+    <div class="col">
+      <h5
+        class="mb-6 border-bottom border-2 border-dark border-md-transparent hover-border-bottom-2 cursor-pointer"
+      >
+        先進的3D投影技術
+      </h5>
+      <p>
+        <%= productName %> 搭載了最新的 3D
+        投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！
+      </p>
+    </div>
+    <div class="col">
+      <h5
+        class="mb-6 border-bottom border-2 border-dark border-md-transparent hover-border-bottom-2 cursor-pointer"
+      >
+        人性化的互動設計
+      </h5>
+      <p>
+        <%= productName %>
+        具有高度智能的語音辨識和回應功能，您可以像跟朋友聊天一樣，與 <%=
+        productName %> 進行自然、流暢的對話。
+      </p>
+    </div>
+    <div class="col">
+      <h5
+        class="mb-6 border-bottom border-2 border-dark border-md-transparent hover-border-bottom-2 cursor-pointer"
+      >
+        豐富的應用場景
+      </h5>
+      <p>
+        無論是家庭娛樂、教育培訓還是商業展示，<%= productName %>
+        都能夠輕鬆滿足您的需求，為您提供更多元的互動體驗。
+      </p>
+    </div>
+    <div class="col">
+      <h5
+        class="mb-6 border-bottom border-2 border-dark border-md-transparent hover-border-bottom-2 cursor-pointer"
+      >
+        高度自主性
+      </h5>
+      <p>
+        <%= productName %>
+        具有強大的自主學習能力，能夠不斷地學習並優化自己，為您創造更加便捷、貼心的生活方式。
+      </p>
+    </div>
+    <div class="col">
+      <h5
+        class="mb-6 border-bottom border-2 border-dark border-md-transparent hover-border-bottom-2 cursor-pointer"
+      >
+        簡單易用的操作界面
+      </h5>
+      <p>
+        <%= productName %>
+        擁有直觀的操作界面，讓您可以輕鬆地掌握並運用它的各種功能。
+      </p>
+    </div>
+  </div>
+</div>
+<!-- comments -->
+<div class="bg-primary-radial-200 pt-15 pt-md-40 pb-20 pb-md-54">
+  <div class="container-xxl">
+    <div class="row mb-6 mb-md-20">
+      <div class="col-xl-4">
+        <h4 class="fs-10 fs-md-12 mb-4 mb-md-3">
+          <span class="ls-100">使用分</span>享
+        </h4>
+        <p>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+      </div>
+    </div>
+    <ul
+      class="card-group row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-6 justify-content-center fw-bold"
+    >
+      <li class="col">
+        <div class="card">
+          <div class="card-header">
+            <p>Zichi</p>
+            <span class="material-icons fs-2"> fiber_manual_record </span>
+            <p>Kaohsiung</p>
+          </div>
+          <p class="card-body">
+            自從家裡有了 <%= productName
+            %>，孩子們的學習興趣提高了不少，他們都喜歡透過 <%= productName
+            %>的3D立體投影來探索新知識，家庭氛圍變得更加和樂融融！
+          </p>
+          <div class="card-footer">
+            <span class="material-icons fs-4"> circle</span>
+            <span class="material-icons fs-4"> circle</span>
+            <p>ALPHABOX+ <%= productName %></p>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card bg-white text-dark">
+          <div class="card-header">
+            <p>Lee</p>
+            <span class="material-icons fs-2"> fiber_manual_record </span>
+            <p>Chiayi</p>
+          </div>
+          <p class="card-body">
+            自從公司引入 <%= productName %>，員工的工作效率提升了很多。 <%=
+            productName %>
+            不僅能快速回應我們的需求，還可以協助我們做各種商業展示，真的是企業的好幫手！
+          </p>
+          <div class="card-footer">
+            <span class="material-icons fs-4"> circle </span>
+            <span class="material-icons fs-4"> circle</span>
+            <p>ALPHABOX+ <%= productName %></p>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card">
+          <div class="card-header">
+            <p>瑞</p>
+            <span class="material-icons fs-2"> fiber_manual_record </span>
+            <p>Taipei</p>
+          </div>
+          <p class="card-body">
+            <%= productName %>
+            讓教學變得更生動有趣，學生們在課堂上的參與度和學習效果都有顯著提升。我非常推薦
+            <%= productName %>給所有的教育工作者！
+          </p>
+          <div class="card-footer">
+            <span class="material-icons fs-4"> circle </span>
+            <span class="material-icons fs-4"> circle</span>
+            <p>ALPHABOX+ <%= productName %></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

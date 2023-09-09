@@ -4,6 +4,11 @@
 .scale-neg-1 {
   transform: scale(-1);
 }
+.scale-md-lg {
+  @include media-breakpoint-up(md) {
+    transform: scale(1.6);
+  }
+}
 .translate-y {
   @include media-breakpoint-up(xl) {
     transform: translateY(-100px);

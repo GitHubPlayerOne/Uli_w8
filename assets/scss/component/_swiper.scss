@@ -43,3 +43,18 @@
 .bg-slide-swiper-reverse .swiper-wrapper {
   transition-timing-function: linear;
 }
+.swiper-product {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: auto;
+    height: auto;
+    &::after {
+      content: "";
+    }
+    &:hover {
+      path {
+        fill: $primary-100;
+      }
+    }
+  }
+}

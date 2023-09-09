@@ -41,11 +41,12 @@ $utilities: map-merge(
             ),
         )
       ),
-    // 增加 透明色
+    // 增加 透明色 & 響應式
     "border-color":
       map-merge(
         map-get($utilities, "border-color"),
         (
+          responsive: true,
           values:
             map-merge(
               map-get(map-get($utilities, "border-color"), "values"),
@@ -123,7 +124,10 @@ $utilities: map-merge(
         class: row-gap,
         values: (
           4: 16px,
+          6: 24px,
           8: 32px,
+          16: 64px,
+          26: 104px,
         ),
       ),
     // 自訂
@@ -152,6 +156,22 @@ $utilities: map-merge(
                 15: 15px,
               )
             ),
+        )
+      ),
+    // 增加 響應式
+    "position":
+      map-merge(
+        map-get($utilities, "position"),
+        (
+          responsive: true,
+        )
+      ),
+    // 增加 響應式
+    "translate-middle":
+      map-merge(
+        map-get($utilities, "translate-middle"),
+        (
+          responsive: true,
         )
       )
   )

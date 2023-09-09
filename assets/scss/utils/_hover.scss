@@ -38,6 +38,11 @@
     border-bottom: 1px solid $primary-500 !important;
   }
 }
+.hover-border-bottom-2 {
+  &:hover {
+    border-bottom: 2px solid $dark !important;
+  }
+}
 .hover-underline {
   position: relative;
   &::before {
