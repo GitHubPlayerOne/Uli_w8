@@ -22,6 +22,12 @@
     height: 226px;
   }
 }
+.h-news-detail {
+  height: 506px;
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+  }
+}
 .w-circle {
   width: 196px;
 }

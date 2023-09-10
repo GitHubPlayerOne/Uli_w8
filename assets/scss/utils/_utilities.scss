@@ -199,6 +199,13 @@ $utilities: map-merge(
         (
           responsive: true,
         )
+      ),
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+        )
       )
   )
 );
