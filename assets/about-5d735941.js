@@ -1,1 +1,0 @@
-import"./pagination-7691947c.js";import{S as e}from"./swiper-bundle-ae89c236.js";new e(".swiper-about",{spaceBetween:40,slidesPerView:"1",autoplay:{delay:3e3},loop:!0,breakpoints:{768:{slidesPerView:"2"},992:{slidesPerView:"3"}}});
