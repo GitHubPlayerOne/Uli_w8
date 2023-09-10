@@ -13,11 +13,17 @@
     text-shadow: 5px 5px 0px $primary-700, 10px 10px 0px rgba($primary-700, 0.5);
   }
 }
+.hover-item-text-shadow {
+  &:hover .item-text-shadow {
+    text-shadow: 5px 5px 0px $primary-700, 10px 10px 0px rgba($primary-700, 0.5);
+  }
+}
 .hover-translate-y {
   &:hover {
     transform: translateY(-4px);
   }
 }
+
 .hover-bg-primary-400 {
   &:hover {
     background: $primary-400;
@@ -36,6 +42,11 @@
 .hover-icon-rotate {
   &:hover .deco-icon {
     animation: animation-rotate 6s linear infinite;
+  }
+}
+.hover-icon-shadow {
+  &:hover .deco-icon-shadow {
+    filter: drop-shadow(-5px 0 0 $primary-700);
   }
 }
 

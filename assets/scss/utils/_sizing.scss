@@ -16,6 +16,12 @@
     height: 315px;
   }
 }
+.h-news {
+  height: 108px;
+  @include media-breakpoint-up(md) {
+    height: 226px;
+  }
+}
 .w-circle {
   width: 196px;
 }

@@ -1,0 +1,92 @@
+<li
+  class="row justify-content-center align-items-center position-relative hover-icon-rotate hover-icon-shadow hover-item-text-shadow"
+>
+  <div class="col-2 col-md-1">
+    <p class="num-font fs-24 fs-md-32 fw-light item-text-shadow transition-3">
+      <%= order === '1' ? '1' : '' %> <%= order === '2' ? '2' : '' %> <%= order
+      === '3' ? '3' : '' %> <%= order === '4' ? '4' : '' %> <%= order === '5' ?
+      '5' : '' %>
+    </p>
+  </div>
+  <div class="col-10 col-md-4 col-lg-2">
+    <picture>
+      <source
+        srcset=" <%= order === '1' ? '/assets/images/news/news.png' : '' %> <%= order === '2' ? '/assets/images/news/thanks.png' : '' %><%= order === '3' ? '/assets/images/news/exhibition.png' : '' %><%= order === '4' ? '/assets/images/news/update.png' : '' %><%= order === '5' ? '/assets/images/news/interview.png' : '' %> "
+        media="(min-width:768px)"
+      />
+      <img
+        src=" <%= order === '1' ? '/assets/images/mobile/news_mobile.png' : '' %><%= order === '2' ? '/assets/images/mobile/thanks_mobile.png' : '' %><%= order === '3' ? '/assets/images/mobile/exhibition_mobile.png' : '' %><%= order === '4' ? '/assets/images/mobile/update_mobile.png' : '' %><%= order === '5' ? '/assets/images/mobile/interview_mobile.png' : '' %>"
+        alt="news"
+        class="h-news w-100 of-cover"
+      />
+    </picture>
+  </div>
+  <div class="col-md-6 mb-4 mb-md-0">
+    <div class="border-top border-bottom py-6 py-md-10 px-4">
+      <div class="d-flex mb-2">
+        <span class="deco-icon material-icons me-4"> emergency </span>
+        <time
+          datetime=" <%= order === '1' ? '2023-06-30' : '' %> <%= order === '2' ?
+            '2023-06-01' : '' %> <%= order === '3' ? '2023-05-27' : '' %> <%=
+            order === '4' ? '2023-04-15' : '' %> <%= order === '5' ? '2023-03-22'
+            : '' %>"
+          class="ls-100 fw-medium"
+        >
+          <%= order === '1' ? '2023.06.30' : '' %> <%= order === '2' ?
+          '2023.06.01' : '' %> <%= order === '3' ? '2023.05.27' : '' %> <%=
+          order === '4' ? '2023.04.15' : '' %> <%= order === '5' ? '2023.03.22'
+          : '' %>
+        </time>
+      </div>
+      <h3 class="fs-5 fw-medium ls-100 mb-3">
+        <%= order === '1' ? '產品升級公告' : '' %> <%= order === '2' ?
+        '限時優惠活動' : '' %> <%= order === '3' ? '參加科技展覽' : '' %> <%=
+        order === '4' ? '新功能上線' : '' %> <%= order === '5' ? '用戶見面會' :
+        '' %>
+      </h3>
+      <p class="fw-light">
+        <!-- ejs '這裡的內容' 如果有 enter 中途換行會跳錯 -->
+        <%= order === '1' ?
+        '榮幸地宣布，ALPHABOX+已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！'
+        : '' %> <%= order === '2' ?
+        '為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。購買ALPHABOX+的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！本月將舉辦一場限時優惠活動。購買ALPHABOX+的顧客，皆可享受九折優惠。'
+        : '' %> <%= order === '3' ?
+        '本公司將參與今年的台灣國際科技展覽，屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！'
+        : '' %> <%= order === '4' ?
+        '為使您的3D立體陪伴機器人更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。近期，我們新推出智慧家居控制功能。'
+        : '' %> <%= order === '5' ?
+        '為進一步滿足客戶需求，並優化產品性能，我們將舉行用戶見面會。屆時，我們將向您展示我們的研發成果，同時聆聽您的意見和建議，讓我們共同打造更完美的產品！同時聆聽您的意見和建議！'
+        : '' %>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-1 align-self-end text-end text-md-start">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      class="deco-icon-shadow transition-3"
+    >
+      <mask
+        id="mask0_321_5981"
+        style="mask-type: alpha"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="40"
+        height="40"
+      >
+        <rect width="40" height="40" fill="#D9D9D9" />
+      </mask>
+      <g mask="url(#mask0_321_5981)">
+        <path
+          d="M19.9999 32.6923L18.2179 30.9359L27.9038 21.25H7.30762V18.75H27.9038L18.2179 9.06413L19.9999 7.30775L32.6921 20L19.9999 32.6923Z"
+          fill="white"
+        />
+      </g>
+    </svg>
+  </div>
+  <a href="news-detail.html" class="stretched-link d-block"></a>
+</li>

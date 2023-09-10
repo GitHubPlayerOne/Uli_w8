@@ -179,7 +179,7 @@ $utilities: map-merge(
             map-merge(
               map-get(map-get($utilities, "gap"), "values"),
               (
-                15: 15px,
+                c-15: 15px,
               )
             ),
         )

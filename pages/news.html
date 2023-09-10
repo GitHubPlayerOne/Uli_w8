@@ -13,9 +13,32 @@
   <body>
     <%- include('./layout/header',{borderBottom:"",
     navbarPosition:"navbar-mobile"}); -%>
-    <div class="bg-primary-radial-100">123</div>
+    <div class="news bg-primary-radial-100 pt-15 pt-md-40 pb-20 pb-md-30">
+      <div class="container-xxl">
+        <h2 class="fs-10 fs-md-12 mb-10 mb-md-15 text-md-center">
+          <span class="ls-100">最新消</span>息
+        </h2>
+        <!-- news-list -->
+        <ol class="d-flex flex-column gap-6 gap-md-15 mb-10 mb-md-20">
+          <%- include('./layout/news-item',{order:'1'}); -%> <%-
+          include('./layout/news-item',{order:'2'}); -%> <%-
+          include('./layout/news-item',{order:'3'}); -%> <%-
+          include('./layout/news-item',{order:'4'}); -%> <%-
+          include('./layout/news-item',{order:'5'}); -%>
+        </ol>
+        <!-- pagination -->
+        <nav aria-label="Page navigation" class="num-font fw-medium">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link active" href="##">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="##">2</a></li>
+            <li class="page-item"><a class="page-link" href="##">3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>
